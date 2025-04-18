@@ -29,6 +29,9 @@ export default function TravelPage() {
                 <h1 className="font-['sloop'] text-5xl text-center mb-16">Travel</h1>
 
                 {/* Content here */}
+                <span className="font-bold">Address:</span> 50 Fleishchmanns Road, Fleischmanns NY
+                <br />
+                <span className="font-bold">Parking:</span> Very limited parking on site, shuttles will run from Margaretville, Pine Hill, Shandanken, and Fleischmanns to the venue and back.
 
                 {/* Decorative bottom element */}
                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">

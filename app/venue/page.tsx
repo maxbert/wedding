@@ -29,6 +29,13 @@ export default function VenuePage() {
                 <h1 className="font-['sloop'] text-5xl text-center mb-16">Venue</h1>
 
                 {/* Content here */}
+                <ul className="list-disc list-inside">
+                    <li>The ceremony and dinner will be outside, please dress accordingly.</li>
+                    <li>Weather usually in the 70s - 80s.</li>
+                    <li>The meadow where the ceremony and dinner will take place is in the woods, there will be tree cover, so you won't be in direct sunlight.</li>
+                    <li>Formal attire requested.</li>
+                    <li>Dancing outside, and the dance floor is made of stone tiles. Block heels recommended.</li>
+                </ul>
 
                 {/* Decorative bottom element */}
                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
