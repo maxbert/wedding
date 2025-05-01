@@ -56,10 +56,10 @@ export default function Home() {
               </div>
 
               {/* Enter button */}
-              <div className="absolute inset-x-0 top-[20%] flex justify-center z-20 font-['sloop'] text-md">
+              <div className="absolute inset-x-0 top-[20%] flex justify-center z-20 text-lg">
                 <Link href="/program">
                   <Button 
-                    className="opacity-100 animate-[fadeIn_4s_ease-in_forwards] bg-[#5e925e] hover:bg-[#4a734a] text-[#f5e6d3] text-xl px-8 py-6 rounded-full"
+                    className="opacity-100 animate-[fadeIn_4s_ease-in_forwards] bg-[#5e925e] hover:bg-[#4a734a] text-[#f5e6d3] text-[48px] px-8 py-12 rounded-20 cursor-pointer"
                   >
                     enter
                   </Button>

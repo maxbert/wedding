@@ -12,7 +12,7 @@ export default function VenuePage() {
         <div className="h-full border-[3px] border-black rounded-[2.5rem] p-3">
           <div className="h-full border-[3px] border-black rounded-[2rem]">
             <div className="h-full flex items-center justify-center">
-              <div className="bg-[#fff5eb] rounded-[2rem] w-[32rem] max-w-full py-16 px-6 md:px-12 relative">
+              <div className="bg-transparent md:bg-[#fff5eb] rounded-[2rem] w-[32rem] max-w-full py-16 px-6 md:px-12 relative">
                 <CenterFlower />
                 <h1 className="font-['sloop'] text-5xl text-center mb-4">Venue</h1>
                 <ul className="list-disc list-inside">

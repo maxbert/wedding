@@ -57,9 +57,6 @@ export function Navigation({ currentPage }: NavigationProps) {
               </Button>
             </DialogTrigger>
             <DialogContent className="bg-[#5e925e] text-[#f5e6d3] border-none">
-              <DialogHeader>
-                <DialogTitle className="text-2xl text-center font-cormorant-garamond">Menu</DialogTitle>
-              </DialogHeader>
               <div className="flex flex-col items-center gap-6 py-4 text-xl">
                 {navLinks.map((link) => (
                   <NavLink key={link.href} {...link} />

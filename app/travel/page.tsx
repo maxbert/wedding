@@ -6,14 +6,14 @@ import { DecorativeLeaf, DecorativeFlower, CenterFlower } from "@/components/Dec
 
 export default function TravelPage() {
   return (
-    <div className="min-h-screen bg-[#f5e6d3]">
+    <div className="min-h-screen bg-[#f5e6d3] max-h-screen overflow-hidden">
       <Navigation currentPage="travel"/>
       <div className="h-[calc(100vh-3.5rem)] relative px-2 md:px-8">
         <div className="h-full border-[3px] border-black rounded-[2.5rem] p-3">
           <div className="h-full border-[3px] border-black rounded-[2rem]">
             <div className="h-full flex items-center justify-center">
-              <div className="bg-[#fff5eb] rounded-[2rem] w-[32rem] max-w-full py-16 px-6 md:px-12 relative">
-                <CenterFlower />
+              <div className="bg-transparent md:bg-[#fff5eb] rounded-[2rem] w-[32rem] max-w-full py-16 px-6 md:px-12 relative">
+                <CenterFlower className="w-[0rem] md:w-[20rem]"/>
 
                 <h1 className="font-['sloop'] text-5xl text-center mb-8">Travel</h1>
 
@@ -42,7 +42,7 @@ export default function TravelPage() {
                   </p>
                 </div>
 
-                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
+                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 hidden md:visible">
                   <div className="w-4 h-4 rotate-45 border border-black"></div>
                 </div>
               </div>

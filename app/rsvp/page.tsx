@@ -10,6 +10,8 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
 import { AccommodationModal } from "@/components/AccommodationModal";
+import { CenterFlower, DecorativeLeaf } from "@/components/DecorativeElements";
+import { DecorativeFlower } from "@/components/DecorativeElements";
 
 interface RsvpFormData {
   name: string;
@@ -64,7 +66,7 @@ export default function RsvpPage() {
           <div className="absolute inset-8 border-[3px] border-black rounded-[2.5rem]">
             <div className="absolute inset-3 border-[3px] border-black rounded-[2rem]">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-[#fff5eb] rounded-[2rem] w-[32rem] py-16 px-12 relative">
+                <div className="bg-transparent md:bg-[#fff5eb] rounded-[2rem] w-[32rem] py-16 px-12 relative">
                   <div className="absolute top-5 left-1/2 -translate-x-1/2">
                     <Image
                       src="/images/center-flowe.png"
@@ -95,22 +97,14 @@ export default function RsvpPage() {
       {/* Main container with border */}
       <div className="relative h-[calc(100vh-3.5rem)]">
         {/* Screen edge borders */}
-        <div className="absolute inset-8 border-[3px] border-black rounded-[2.5rem]">
-          <div className="absolute inset-3 border-[3px] border-black rounded-[2rem]">
+        <div className="absolute inset-0 md:inset-8 border-[3px] border-black rounded-[2.5rem]">
+          <div className="absolute inset-0 md:inset-3 border-[3px] border-black rounded-[2rem]">
             {/* Center content */}
             <div className="absolute inset-0 flex items-center justify-center">
               {/* Content card */}
-              <div className="bg-[#fff5eb] rounded-[2rem] w-[32rem] py-16 px-12 relative">
+              <div className="bg-transparent md:bg-[#fff5eb] rounded-[2rem] w-[32rem] py-16 px-12 relative">
                 {/* Decorative top element */}
-                <div className="absolute top-5 left-1/2 -translate-x-1/2">
-                  <Image
-                    src="/images/center-flowe.png"
-                    alt="Decorative element"
-                    width={30}
-                    height={30}
-                    className="opacity-80"
-                  />
-                </div>
+                <CenterFlower className="w-[0rem] md:w-[20rem]" />
 
                 {/* French title */}
                 <h1 className="font-['sloop'] text-4xl text-center mb-8">Répondez s'il vous plaît</h1>
@@ -209,7 +203,7 @@ export default function RsvpPage() {
                 </div>
 
                 {/* Decorative bottom element */}
-                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
+                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 hidden md:visible">
                   <div className="w-4 h-4 rotate-45 border border-black"></div>
                 </div>
               </div>
@@ -217,25 +211,8 @@ export default function RsvpPage() {
           </div>
         </div>
 
-        {/* Decorative elements */}
-        <div className="absolute left-0 bottom-32 z-10">
-          <Image
-            src="/images/leaf-left.png"
-            alt="Decorative leaf"
-            className="w-[6rem] md:w-[18rem] h-auto opacity-80"
-            width={200}
-            height={300}
-          />
-        </div>
-        <div className="absolute right-0 top-32 z-10">
-          <Image
-            src="/images/flower-right.png"
-            alt="Decorative flower"
-            className="w-[6rem] md:w-[18rem] h-auto opacity-80"
-            width={800}
-            height={1000}
-          />
-        </div>
+        <DecorativeLeaf />
+        <DecorativeFlower />
       </div>
     </div>
   );
