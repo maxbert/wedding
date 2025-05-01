@@ -62,7 +62,7 @@ export default function RsvpPage() {
     return (
       <div className="min-h-screen bg-[#f5e6d3]">
         <Navigation currentPage="rsvp"/>
-        <div className="relative h-[calc(100vh-3.5rem)]">
+        <div className="relative min-h-[calc(100vh-3.5rem)]">
           <div className="absolute inset-8 border-[3px] border-black rounded-[2.5rem]">
             <div className="absolute inset-3 border-[3px] border-black rounded-[2rem]">
               <div className="absolute inset-0 flex items-center justify-center">
@@ -95,7 +95,7 @@ export default function RsvpPage() {
       <Navigation currentPage="rsvp"/>
 
       {/* Main container with border */}
-      <div className="relative h-[calc(100vh-3.5rem)]">
+      <div className="relative min-h-[calc(100vh-3.5rem)]">
         {/* Screen edge borders */}
         <div className="absolute inset-0 md:inset-8 border-[3px] border-black rounded-[2.5rem]">
           <div className="absolute inset-0 md:inset-3 border-[3px] border-black rounded-[2rem]">
@@ -141,13 +141,13 @@ export default function RsvpPage() {
                       }}
                     >
                       <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="attending" id="attending" />
+                        <RadioGroupItem value="attending" id="attending" className="border-black data-[state=checked]:bg-[#5e925e] data-[state=checked]:border-[#5e925e]" />
                         <Label htmlFor="attending" className="text-sm">will attend.</Label>
                       </div>
                       
                       <div className="space-y-2">
                         <div className="flex items-center space-x-2">
-                          <RadioGroupItem value="attending-plus-one" id="attending-plus-one" />
+                          <RadioGroupItem value="attending-plus-one" id="attending-plus-one" className="border-black data-[state=checked]:bg-[#5e925e] data-[state=checked]:border-[#5e925e]" />
                           <Label htmlFor="attending-plus-one" className="text-sm">will attend with one additional guest.</Label>
                         </div>
                         {attendance === 'attending-plus-one' && (
@@ -170,7 +170,7 @@ export default function RsvpPage() {
                       </div>
 
                       <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="not-attending" id="not-attending" />
+                        <RadioGroupItem value="not-attending" id="not-attending" className="border-black data-[state=checked]:bg-[#5e925e] data-[state=checked]:border-[#5e925e]" />
                         <Label htmlFor="not-attending" className="text-sm">will be unable to attend.</Label>
                       </div>
                     </RadioGroup>

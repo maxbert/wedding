@@ -6,9 +6,9 @@ import { DecorativeLeaf, DecorativeFlower, CenterFlower } from "@/components/Dec
 
 export default function TravelPage() {
   return (
-    <div className="min-h-screen bg-[#f5e6d3] max-h-screen overflow-hidden">
+    <div className="min-h-screen bg-[#f5e6d3] overflow-hidden">
       <Navigation currentPage="travel"/>
-      <div className="h-[calc(100vh-3.5rem)] relative px-2 md:px-8">
+      <div className="min-h-[calc(100vh-3.5rem)] relative px-2 md:px-8">
         <div className="h-full border-[3px] border-black rounded-[2.5rem] p-3">
           <div className="h-full border-[3px] border-black rounded-[2rem]">
             <div className="h-full flex items-center justify-center">

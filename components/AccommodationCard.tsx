@@ -24,16 +24,16 @@ export function AccommodationCard({ name, url, imageUrl, details }: Accommodatio
         </div>
       )}
       <div className="flex-grow">
-        <h3 className="text-2xl">{name}</h3>
+        <h3 className="text-xl md:text-2xl">{name}</h3>
         {details.map((detail, index) => (
-          <p key={index} className="text-gray-600 text-sm mt-1">
+          <p key={index} className="text-gray-600 text-xs md:text-sm mt-1">
             {detail}
           </p>
         ))}
       </div>
       <Button 
         variant="outline"
-        className="bg-[#6A8D73] text-white hover:bg-[#557a5d] border-none rounded-full px-8"
+        className="bg-[#6A8D73] text-white hover:bg-[#557a5d] border-none rounded-full px-4 md:px-8 text-sm md:text-base"
         onClick={() => window.open(url, '_blank')}
       >
         view

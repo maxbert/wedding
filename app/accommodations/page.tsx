@@ -92,13 +92,13 @@ export default function AccommodationsPage() {
                   {Object.entries(accommodations).map(([city, { distance, places }]) => (
                     <div key={city} className="space-y-6">
                       <div>
-                        <h2 className="font-['sloop'] text-4xl">
-                          {city} <span className="font-['garamond'] text-sm">({distance} mi)</span>
+                        <h2 className="font-['sloop'] text-3xl md:text-4xl">
+                          {city} <span className="font-['garamond'] text-xs md:text-sm">({distance} mi)</span>
                         </h2>
                       </div>
                       <div className="space-y-4">
                         {places.map((place) => (
-                          <div key={`${place.name}-${place.details[0]}`} className="bg-[#fff5eb] rounded-[2rem] p-6 border-[3px] border-black">
+                          <div key={`${place.name}-${place.details[0]}`} className="bg-[#fff5eb] rounded-[2rem] p-3 md:p-6 border-[3px] border-black">
                             <AccommodationCard {...place} />
                           </div>
                         ))}
@@ -107,7 +107,7 @@ export default function AccommodationsPage() {
                   ))}
                 </div>
 
-                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
+                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
                   <div className="w-4 h-4 rotate-45 border border-black"></div>
                 </div>
               </div>

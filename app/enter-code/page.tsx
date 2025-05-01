@@ -26,7 +26,7 @@ export default function EnterCodePage() {
   return (
     <div className="min-h-screen bg-[#f5e6d3]">
       <Navigation currentPage="enter-code"/>
-      <div className="h-[calc(100vh-3.5rem)] flex items-center justify-center">
+      <div className="min-h-[calc(100vh-3.5rem)] flex items-center justify-center">
         {!isValid ? (
           <form onSubmit={() => {}} className="w-64">
             <Input
@@ -45,7 +45,10 @@ export default function EnterCodePage() {
                   As a close family member or member of the wedding party, you are invited to the rehearsal dinner on Saturday, August 23rd at 5:30pm.
                   <br />
                   <br />
-                  The dinner will be held at the venue, and will be a casual affair.
+                  The dinner will be held at the venue, inside the mansion, please dress appropriately.
+                  <br />
+                  <br />
+                  As a member of the wedding party, your accomodation for the night of the rehersal dinner and the night of the wedding is provided for. If you're unaware of where you're staying, please let us know.
                   <br />
                   <br />
                   No need to RSVP, your attendance is assumed if you RSVPed for the wedding.

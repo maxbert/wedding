@@ -8,7 +8,7 @@ export default function VenuePage() {
   return (
     <div className="min-h-screen bg-[#f5e6d3]">
       <Navigation currentPage="venue"/>
-      <div className="h-[calc(100vh-3.5rem)] relative px-2 md:px-8">
+      <div className="min-h-[calc(100vh-3.5rem)] relative px-2 md:px-8">
         <div className="h-full border-[3px] border-black rounded-[2.5rem] p-3">
           <div className="h-full border-[3px] border-black rounded-[2rem]">
             <div className="h-full flex items-center justify-center">
@@ -23,7 +23,7 @@ export default function VenuePage() {
                   <li>Dancing outside, and the dance floor is made of stone tiles. Block heels recommended.</li>
                   <li className="animate-pulse text-red-600">There is no parking at the venue. Please confirm your accommodation on the RSVP page so we can ensure a shuttle is available to transport you to and from the venue.</li>
                 </ul>
-                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
+                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
                   <div className="w-4 h-4 rotate-45 border border-black"></div>
                 </div>
               </div>
