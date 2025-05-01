@@ -62,20 +62,12 @@ export default function RsvpPage() {
     return (
       <div className="min-h-screen bg-[#f5e6d3]">
         <Navigation currentPage="rsvp"/>
-        <div className="relative min-h-[calc(100vh-3.5rem)]">
+        <div className="relative min-h-[calc(100vh-3.5rem)] md:h-[calc(100vh-3.5rem)]">
           <div className="absolute inset-8 border-[3px] border-black rounded-[2.5rem]">
             <div className="absolute inset-3 border-[3px] border-black rounded-[2rem]">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-transparent md:bg-[#fff5eb] rounded-[2rem] w-[32rem] py-16 px-12 relative">
-                  <div className="absolute top-5 left-1/2 -translate-x-1/2">
-                    <Image
-                      src="/images/center-flowe.png"
-                      alt="Decorative element"
-                      width={30}
-                      height={30}
-                      className="opacity-80"
-                    />
-                  </div>
+                  <CenterFlower className=""/>
                   <h1 className="font-['sloop'] text-4xl text-center mb-8">Thank You</h1>
                   <p className="text-center">Your response has been recorded.</p>
                   <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
@@ -95,7 +87,7 @@ export default function RsvpPage() {
       <Navigation currentPage="rsvp"/>
 
       {/* Main container with border */}
-      <div className="relative min-h-[calc(100vh-3.5rem)]">
+      <div className="relative min-h-[calc(100vh-3.5rem)] md:h-[calc(100vh-3.5rem)]">
         {/* Screen edge borders */}
         <div className="absolute inset-0 md:inset-8 border-[3px] border-black rounded-[2.5rem]">
           <div className="absolute inset-0 md:inset-3 border-[3px] border-black rounded-[2rem]">
@@ -104,7 +96,7 @@ export default function RsvpPage() {
               {/* Content card */}
               <div className="bg-transparent md:bg-[#fff5eb] rounded-[2rem] w-[32rem] py-16 px-12 relative">
                 {/* Decorative top element */}
-                <CenterFlower className="w-[0rem] md:w-[20rem]" />
+                <CenterFlower className="" />
 
                 {/* French title */}
                 <h1 className="font-['sloop'] text-4xl text-center mb-8">Répondez s'il vous plaît</h1>

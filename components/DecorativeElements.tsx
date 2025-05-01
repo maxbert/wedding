@@ -34,7 +34,7 @@ export function DecorativeFlower({ className = "" }: DecorativeElementsProps) {
 
 export function CenterFlower({ className = "" }: DecorativeElementsProps) {
   return (
-    <div className={`absolute top-5 left-1/2 -translate-x-1/2 ${className}`}>
+    <div className={`absolute top-5 left-1/2 -translate-x-1/2 ${className} w-[0rem] md:w-[2rem]`}>
       <Image
         src="/images/center-flowe.png"
         alt="Decorative element"

@@ -107,9 +107,7 @@ export default function AccommodationsPage() {
                   ))}
                 </div>
 
-                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
-                  <div className="w-4 h-4 rotate-45 border border-black"></div>
-                </div>
+                
               </div>
             </div>
           </div>
