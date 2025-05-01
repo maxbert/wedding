@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import { Cormorant_Garamond } from "next/font/google";
+import { Great_Vibes } from "next/font/google";
 
-const cormorantGaramond = Cormorant_Garamond({
+const inter = Inter({ subsets: ["latin"] });
+const greatVibes = Great_Vibes({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-cormorant-garamond",
+  variable: "--font-great-vibes",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${cormorantGaramond.className}`}>{children}</body>
+      <body className={`${inter.className} ${greatVibes.variable}`}>{children}</body>
     </html>
   );
 }

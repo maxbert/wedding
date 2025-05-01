@@ -29,16 +29,16 @@ export default function Home() {
               </div>
               
               {/* Decorative overlay elements */}
-              <div className="absolute -left-8 md:-left-32 bottom-6 z-10">
+              <div className="absolute -left-16 md:-left-32 bottom-6 z-10">
                 <Image
                   src="/images/leaf-left.png"
                   alt="Decorative leaf"
-                  className="w-[4rem] md:w-[18rem] h-auto"
+                  className="w-[12rem] md:w-[18rem] h-auto"
                   width={200}
                   height={300}
                 />
               </div>
-              <div className="absolute -right-8 md:-right-32 z-10">
+              <div className="absolute -right-16 md:-right-32 z-10">
                 <Image
                   src="/images/flower-right.png"
                   alt="Decorative flower"

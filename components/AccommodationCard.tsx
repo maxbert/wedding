@@ -24,7 +24,7 @@ export function AccommodationCard({ name, url, imageUrl, details }: Accommodatio
         </div>
       )}
       <div className="flex-grow">
-        <h3 className="text-2xl">{name}</h3>
+        <h3 className="font-['sloop'] text-2xl">{name}</h3>
         {details.map((detail, index) => (
           <p key={index} className="text-gray-600 text-sm mt-1">
             {detail}

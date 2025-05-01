@@ -9,7 +9,6 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
-import { AccommodationModal } from "@/components/AccommodationModal";
 
 interface RsvpFormData {
   name: string;
@@ -65,12 +64,12 @@ export default function RsvpPage() {
             <div className="absolute inset-3 border-[3px] border-black rounded-[2rem]">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-[#fff5eb] rounded-[2rem] w-[32rem] py-16 px-12 relative">
-                  <div className="absolute top-5 left-1/2 -translate-x-1/2">
+                  <div className="absolute -top-8 left-1/2 -translate-x-1/2">
                     <Image
-                      src="/images/center-flowe.png"
+                      src="/images/flower-right.png"
                       alt="Decorative element"
-                      width={30}
-                      height={30}
+                      width={60}
+                      height={60}
                       className="opacity-80"
                     />
                   </div>
@@ -102,12 +101,12 @@ export default function RsvpPage() {
               {/* Content card */}
               <div className="bg-[#fff5eb] rounded-[2rem] w-[32rem] py-16 px-12 relative">
                 {/* Decorative top element */}
-                <div className="absolute top-5 left-1/2 -translate-x-1/2">
+                <div className="absolute -top-8 left-1/2 -translate-x-1/2">
                   <Image
-                    src="/images/center-flowe.png"
+                    src="/images/flower-right.png"
                     alt="Decorative element"
-                    width={30}
-                    height={30}
+                    width={60}
+                    height={60}
                     className="opacity-80"
                   />
                 </div>
@@ -198,16 +197,6 @@ export default function RsvpPage() {
                   </div>
                 </form>
 
-                {/* Accommodation section */}
-                <div className="mt-12 pt-8 border-t border-black/20">
-                  <p className="text-center mb-6">
-                    There is no parking at the venue. Please confirm your accommodation so we can ensure a shuttle is available to transport you to and from the venue.
-                  </p>
-                  <div className="flex justify-center">
-                    <AccommodationModal />
-                  </div>
-                </div>
-
                 {/* Decorative bottom element */}
                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
                   <div className="w-4 h-4 rotate-45 border border-black"></div>
@@ -222,7 +211,7 @@ export default function RsvpPage() {
           <Image
             src="/images/leaf-left.png"
             alt="Decorative leaf"
-            className="w-[6rem] md:w-[18rem] h-auto opacity-80"
+            className="w-[18rem] h-auto opacity-80"
             width={200}
             height={300}
           />
@@ -231,7 +220,7 @@ export default function RsvpPage() {
           <Image
             src="/images/flower-right.png"
             alt="Decorative flower"
-            className="w-[6rem] md:w-[18rem] h-auto opacity-80"
+            className="w-[18rem] h-auto opacity-80"
             width={800}
             height={1000}
           />

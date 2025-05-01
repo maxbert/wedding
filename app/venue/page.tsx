@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Navigation } from "@/components/Navigation";
-import { DecorativeLeaf, DecorativeFlower, CenterFlower } from "@/components/DecorativeElements";
 
 export default function VenuePage() {
   return (
@@ -16,16 +15,26 @@ export default function VenuePage() {
             <div className="absolute inset-0 flex items-center justify-center">
               {/* Content card */}
               <div className="bg-[#fff5eb] rounded-[2rem] w-[32rem] py-16 px-12 relative">
-                <CenterFlower />
+                {/* Decorative top element */}
+                <div className="absolute -top-8 left-1/2 -translate-x-1/2">
+                  <Image
+                    src="/images/flower-right.png"
+                    alt="Decorative element"
+                    width={60}
+                    height={60}
+                    className="opacity-80"
+                  />
+                </div>
 
-                <h1 className="font-['sloop'] text-5xl text-center mb-4">Venue</h1>
+                <h1 className="font-['sloop'] text-5xl text-center mb-16">Venue</h1>
+
+                {/* Content here */}
                 <ul className="list-disc list-inside">
-                  <li>The ceremony and dinner will be outside, please dress accordingly.</li>
-                  <li>Weather usually in the 70s - 80s.</li>
-                  <li>The meadow where the ceremony and dinner will take place is in the woods, there will be tree cover, so you won't be in direct sunlight.</li>
-                  <li>Formal attire requested.</li>
-                  <li>Dancing outside, and the dance floor is made of stone tiles. Block heels recommended.</li>
-                  <li className="animate-pulse text-red-600">There is no parking at the venue. Please confirm your accommodation on the RSVP page so we can ensure a shuttle is available to transport you to and from the venue.</li>
+                    <li>The ceremony and dinner will be outside, please dress accordingly.</li>
+                    <li>Weather usually in the 70s - 80s.</li>
+                    <li>The meadow where the ceremony and dinner will take place is in the woods, there will be tree cover, so you won't be in direct sunlight.</li>
+                    <li>Formal attire requested.</li>
+                    <li>Dancing outside, and the dance floor is made of stone tiles. Block heels recommended.</li>
                 </ul>
 
                 {/* Decorative bottom element */}
@@ -37,8 +46,25 @@ export default function VenuePage() {
           </div>
         </div>
 
-        <DecorativeLeaf />
-        <DecorativeFlower />
+        {/* Decorative elements */}
+        <div className="absolute left-0 bottom-32 z-10">
+          <Image
+            src="/images/leaf-left.png"
+            alt="Decorative leaf"
+            className="w-[18rem] h-auto opacity-80"
+            width={200}
+            height={300}
+          />
+        </div>
+        <div className="absolute right-0 top-32 z-10">
+          <Image
+            src="/images/flower-right.png"
+            alt="Decorative flower"
+            className="w-[18rem] h-auto opacity-80"
+            width={800}
+            height={1000}
+          />
+        </div>
       </div>
     </div>
   );

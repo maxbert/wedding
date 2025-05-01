@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Navigation } from "@/components/Navigation";
-import { DecorativeLeaf, DecorativeFlower, CenterFlower } from "@/components/DecorativeElements";
 
 export default function TravelPage() {
   return (
@@ -16,26 +15,23 @@ export default function TravelPage() {
             <div className="absolute inset-0 flex items-center justify-center">
               {/* Content card */}
               <div className="bg-[#fff5eb] rounded-[2rem] w-[32rem] py-16 px-12 relative">
-                <CenterFlower />
-
-                <h1 className="font-['sloop'] text-5xl text-center mb-8">Travel</h1>
-
-                <div className="w-full h-full flex justify-center mb-8">
-                  <a href="https://www.google.com/maps/place/Spillian/@42.1526715,-74.5496472,17z/data=!3m1!4b1!4m6!3m5!1s0x89dc5fa815218ec5:0x4dab4e744f01a8e2!8m2!3d42.1526676!4d-74.5470723!16s%2Fg%2F1ptyqzvq5?entry=ttu&g_ep=EgoyMDI1MDQyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" className="border-2 border-black rounded-lg p-2 w-[300px] h-[300px] overflow-hidden">
-                    <Image 
-                      src="/images/map.png" 
-                      alt="Map" 
-                      width={300} 
-                      height={300}
-                      className="w-full h-full object-cover"
-                    />
-                  </a>
+                {/* Decorative top element */}
+                <div className="absolute -top-8 left-1/2 -translate-x-1/2">
+                  <Image
+                    src="/images/flower-right.png"
+                    alt="Decorative element"
+                    width={60}
+                    height={60}
+                    className="opacity-80"
+                  />
                 </div>
+
+                <h1 className="font-['sloop'] text-5xl text-center mb-16">Travel</h1>
 
                 {/* Content here */}
                 <span className="font-bold">Address:</span> 50 Fleishchmanns Road, Fleischmanns NY
                 <br />
-                 <span className="font-black text-red-600 animate-[pulse_1s_ease-in-out_infinite]"> THERE IS NO PARKING AT THE VENUE </span> shuttles will run from Margaretville, Pine Hill, Shandanken, and Fleischmanns to the venue and back. Please confirm your accomodations on the RSVP page so that we can ensure a shuttle can transport you to and from the venue.
+                <span className="font-bold">Parking:</span> Very limited parking on site, shuttles will run from Margaretville, Pine Hill, Shandanken, and Fleischmanns to the venue and back.
 
                 {/* Decorative bottom element */}
                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
@@ -46,8 +42,25 @@ export default function TravelPage() {
           </div>
         </div>
 
-        <DecorativeLeaf />
-        <DecorativeFlower />
+        {/* Decorative elements */}
+        <div className="absolute left-0 bottom-32 z-10">
+          <Image
+            src="/images/leaf-left.png"
+            alt="Decorative leaf"
+            className="w-[18rem] h-auto opacity-80"
+            width={200}
+            height={300}
+          />
+        </div>
+        <div className="absolute right-0 top-32 z-10">
+          <Image
+            src="/images/flower-right.png"
+            alt="Decorative flower"
+            className="w-[18rem] h-auto opacity-80"
+            width={800}
+            height={1000}
+          />
+        </div>
       </div>
     </div>
   );
