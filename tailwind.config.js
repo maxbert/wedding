@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         script: ['sloop', 'cursive'],
+        garamond: ['var(--font-garamond)', 'serif'],
       },
       colors: {
         cream: '#f5e6d3',

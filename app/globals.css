@@ -1,4 +1,7 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -43,11 +46,9 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face { font-family: "sloop"; src: url("https://font-public.canva.com/YAEz2L9phwY/0/subsets/SloopScriptPro-Regular.977d1e2936b54e31c.7a5ed98394a9d7badad1c99cad31622.woff2") format("woff2"); font-style: normal; font-weight: 400; unicode-range: U+0-7F, U+80-FF, U+100-17F, U+1E00-1EFF; }
+
+@font-face { font-family: "garamond"; src: url("/public/garamond.ttf") format("ttf"); font-style: normal; font-weight: 400; unicode-range: U+0-7F, U+80-FF, U+100-17F, U+1E00-1EFF; }
 
 :root {
   --radius: 0.625rem;
@@ -124,5 +125,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@media (min-width: 640px) {
+  [data-hide-mobile] {
+    display: block !important;
   }
 }

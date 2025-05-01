@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Navigation } from "@/components/Navigation";
+import { DecorativeLeaf } from "@/components/DecorativeElements";
+import { DecorativeFlower } from "@/components/DecorativeElements";
 
 export default function ProgramPage() {
   return (
@@ -71,25 +73,8 @@ export default function ProgramPage() {
           </div>
         </div>
 
-        {/* Decorative elements */}
-        <div className="absolute left-0 bottom-32 z-10">
-          <Image
-            src="/images/leaf-left.png"
-            alt="Decorative leaf"
-            className="w-[18rem] h-auto opacity-80"
-            width={200}
-            height={300}
-          />
-        </div>
-        <div className="absolute right-0 top-32 z-10">
-          <Image
-            src="/images/flower-right.png"
-            alt="Decorative flower"
-            className="w-[18rem] h-auto opacity-80"
-            width={800}
-            height={1000}
-          />
-        </div>
+        <DecorativeLeaf />
+        <DecorativeFlower />
       </div>
     </div>
   );
