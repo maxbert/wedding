@@ -34,10 +34,10 @@ export default function TravelPage() {
                 <div className="space-y-4">
                   <p><span className="font-bold">Address:</span> 50 Fleishchmanns Road, Fleischmanns NY</p>
                   <p className="font-black text-red-600 animate-[pulse_1s_ease-in-out_infinite]">
-                    THERE IS NO PARKING AT THE VENUE
+                    There is very limited parking at the venue, and some more parking at the bottom of the hill (about a 10 minute walk from the venue).
                   </p>
                   <p>
-                    Shuttles will run from Margaretville, Pine Hill, Shandanken, and Fleischmanns to the venue and back. 
+                    Shuttles will run from surrounding towns to the venue and back. 
                     Please confirm your accomodations on the RSVP page so that we can ensure a shuttle can transport you to and from the venue.
                   </p>
                 </div>

@@ -187,7 +187,7 @@ export default function RsvpPage() {
                 {/* Accommodation section */}
                 <div className="mt-12 pt-8 border-t border-black/20">
                   <p className="text-center mb-6">
-                    There is no parking at the venue. Please confirm your accommodation so we can ensure a shuttle is available to transport you to and from the venue.
+                    There is very limited parking at the venue. Please confirm your accommodation so we can ensure a shuttle is available to transport you to and from the venue.
                   </p>
                   <div className="flex justify-center">
                     <AccommodationModal />

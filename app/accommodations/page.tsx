@@ -85,7 +85,7 @@ export default function AccommodationsPage() {
                 
                 <p className="text-center text-lg mb-12">
                   There's lots of lodging nearby, and we recommend staying in one of the following towns. 
-                  Shuttles will run from the venue to and from the following accommodations.
+                  Shuttles will run from the venue to and from the following accommodations. If you are staying somewhere else, please confirm your accomodations on the RSVP page so we can ensure a shuttle can transport you to and from the venue.
                 </p>
 
                 <div className="space-y-12">
