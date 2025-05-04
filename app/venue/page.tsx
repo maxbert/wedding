@@ -21,7 +21,7 @@ export default function VenuePage() {
                   <li>The meadow where the ceremony and dinner will take place is in the woods, there will be tree cover, so you won't be in direct sunlight.</li>
                   <li>Formal attire requested.</li>
                   <li>Dancing outside, and the dance floor is made of stone tiles. Block heels recommended.</li>
-                  <li>There is very limited parking at the venue, and some more parking at the bottom of the hill (about a 10 minute walk from the venue). Please confirm your accommodation on the RSVP page so we can ensure a shuttle is available to transport you to and from the venue.</li>
+                  <li className="animate-pulse text-red-600">There is no parking at the venue. Please confirm your accommodation on the RSVP page so we can ensure a shuttle is available to transport you to and from the venue.</li>
                 </ul>
                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 hidden md:block">
                   <div className="w-4 h-4 rotate-45 border border-black"></div>
