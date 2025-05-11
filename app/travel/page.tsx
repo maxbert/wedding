@@ -8,12 +8,15 @@ export default function TravelPage() {
   return (
     <div className="min-h-screen bg-[#f5e6d3] overflow-hidden">
       <Navigation currentPage="travel"/>
-      <div className="min-h-[calc(100vh-3.5rem)] relative px-2 md:px-8 py-4">
-        <div className="relative border-[3px] border-black rounded-[2.5rem] p-3">
-          <div className="border-[3px] border-black rounded-[2rem] relative">
-            <div className="py-8">
-              <div className="bg-transparent md:bg-[#fff5eb] rounded-[2rem] w-[32rem] max-w-full py-16 px-6 md:px-12 relative mx-auto">
-                  <CenterFlower className=""/>
+      <div className="h-[calc(100vh-64px)] overflow-y-auto relative py-2 px-0 md:px-8">
+        <div className="relative border-[3px] h-full w-full border-black rounded-[2.5rem] p-3">
+
+
+          <div className="border-[3px] border-black rounded-[2rem] relative h-full w-full overflow-y-auto">
+            <div className="py-8 h-full w-full">
+
+        <CenterFlower className=""/>
+              <div className="mt-10 bg-transparent md:bg-[#fff5eb] rounded-[2rem] w-[32rem] max-w-full py-16 px-6 md:px-12 relative mx-auto">
 
                 <h1 className="font-['sloop'] text-5xl text-center mb-8">Travel</h1>
 

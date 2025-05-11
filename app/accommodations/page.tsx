@@ -74,40 +74,43 @@ export default function AccommodationsPage() {
   return (
     <div className="min-h-screen bg-[#f5e6d3]">
       <Navigation currentPage="accommodations"/>
-      <div className="min-h-[calc(100vh-3.5rem)] relative px-2 md:px-8">
-        <div className="h-full border-[3px] border-black rounded-[2.5rem] p-3">
-          <div className="h-full border-[3px] border-black rounded-[2rem]">
-            <div className="h-full flex items-center justify-center py-8">
-              <div className="bg-transparent md:bg-[#fff5eb] rounded-[2rem] w-[42rem] max-w-full py-16 px-6 md:px-12 relative">
-                <CenterFlower />
+      <div className="h-[calc(100vh-64px)] overflow-y-auto relative py-2 px-0 md:px-8">
+        <div className="relative border-[3px] h-full w-full border-black rounded-[2.5rem] p-3">
+          <div className="border-[3px] border-black rounded-[2rem] relative h-full w-full overflow-y-auto p-3">
 
-                <h1 className="font-['sloop'] text-5xl text-center mb-8">Accommodations</h1>
-                
-                <p className="text-center text-lg mb-12">
-                  There's lots of lodging nearby, and we recommend staying in one of the following towns. 
-                  Shuttles will run from the venue to and from the following accommodations.
-                </p>
+          <CenterFlower />
+            <div className="py-8">
+              <div className="h-full flex items-center justify-center py-8">
+                <div className="bg-transparent md:bg-[#fff5eb] rounded-[2rem] w-[42rem] max-w-full py-16 px-6 md:px-12 relative">
 
-                <div className="space-y-12">
-                  {Object.entries(accommodations).map(([city, { distance, places }]) => (
-                    <div key={city} className="space-y-6">
-                      <div>
-                        <h2 className="font-['sloop'] text-3xl md:text-4xl">
-                          {city} <span className="font-['garamond'] text-xs md:text-sm">({distance} mi)</span>
-                        </h2>
+                  <h1 className="font-['sloop']  md:text-[80px] text-[60px] text-center mb-8">Accommodations</h1>
+                  
+                  <p className="text-center text-lg mb-12">
+                    There's lots of lodging nearby, and we recommend staying in one of the following towns. 
+                    Shuttles will run from the venue to and from the following accommodations.
+                  </p>
+
+                  <div className="space-y-12">
+                    {Object.entries(accommodations).map(([city, { distance, places }]) => (
+                      <div key={city} className="space-y-6">
+                        <div>
+                          <h2 className="font-['sloop'] text-3xl md:text-4xl">
+                            {city} <span className="font-['garamond'] text-xs md:text-sm">({distance} mi)</span>
+                          </h2>
+                        </div>
+                        <div className="space-y-4">
+                          {places.map((place) => (
+                            <div key={`${place.name}-${place.details[0]}`} className="bg-[#fff5eb] rounded-[2rem] p-3 md:p-6 border-[3px] border-black">
+                              <AccommodationCard {...place} />
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                      <div className="space-y-4">
-                        {places.map((place) => (
-                          <div key={`${place.name}-${place.details[0]}`} className="bg-[#fff5eb] rounded-[2rem] p-3 md:p-6 border-[3px] border-black">
-                            <AccommodationCard {...place} />
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
+
+                  
                 </div>
-
-                
               </div>
             </div>
           </div>

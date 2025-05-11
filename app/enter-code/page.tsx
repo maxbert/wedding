@@ -26,7 +26,7 @@ export default function EnterCodePage() {
   return (
     <div className="min-h-screen bg-[#f5e6d3]">
       <Navigation currentPage="enter-code"/>
-      <div className="min-h-[calc(100vh-3.5rem)] h-[calc(100vh-3.5rem)] relative px-2 md:px-8">
+      <div className="min-h-[calc(100vh-3.5rem)] h-[calc(100vh-3.5rem)] relative py-2 px-0 md:px-8">
       <div className="absolute inset-0 border-[3px] border-black rounded-[2.5rem] p-3 flex items-center justify-center">
         {!isValid ? (
           <form onSubmit={() => {}} className="w-64 flex flex-col items-center">
@@ -39,7 +39,7 @@ export default function EnterCodePage() {
           </form>
         ) : (
           <div className="text-center w-full max-w-4xl">
-            <h1 className="font-['sloop'] text-5xl mb-8">Rehearsal Dinner Information</h1>
+            <h1 className="font-['sloop']  md:text-[80px] text-[60px] mb-8">Rehearsal Dinner Information</h1>
             <Card className="max-w-2xl mx-auto bg-[#fff5eb] border-2 border-black">
               <CardContent className="p-6">
                 <p className="text-center text-lg">
