@@ -84,15 +84,14 @@ export default function RsvpPage() {
 
   return (
     <div className="min-h-screen bg-[#f5e6d3]">
-      <Navigation currentPage="venue"/>
+      <Navigation currentPage="rsvp"/>
       <div className="h-[calc(100vh-64px)] overflow-y-auto relative py-2 px-0 md:px-8">
       <div className="relative border-[3px] h-full w-full border-black rounded-[2.5rem] p-3">
           <div className="border-[3px] border-black rounded-[2rem] relative h-full w-full">
-
+          <CenterFlower className="md:block hidden"/>
       {/* Main container with border */}
             {/* Center content */}
-            <div className="absolute inset-0 flex items-center justify-center">
-            <CenterFlower className="" />
+            <div className="absolute inset-0 flex items-center justify-center md:mt-[50px]">
 
               {/* Content card */}
               <div className="bg-transparent md:bg-[#fff5eb] rounded-[2rem] w-[32rem] py-16 px-12 relative">

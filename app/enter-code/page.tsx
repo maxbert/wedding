@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import bcrypt from 'bcryptjs';
-import { DecorativeFlower, DecorativeLeaf } from "@/components/DecorativeElements";
+import { CenterFlower, DecorativeFlower, DecorativeLeaf } from "@/components/DecorativeElements";
 
 // This is the hashed version of 'flaxviper'
 const CORRECT_HASH = bcrypt.hashSync('flaxviper', 10);
@@ -39,8 +39,9 @@ export default function EnterCodePage() {
           </form>
         ) : (
           <div className="text-center w-full max-w-4xl">
-            <h1 className="font-['sloop']  md:text-[80px] text-[60px] mb-8">Rehearsal Dinner Information</h1>
-            <Card className="max-w-2xl mx-auto bg-[#fff5eb] border-2 border-black">
+            <CenterFlower className="md:block hidden"/>
+            <h1 className="font-['sloop']  text-4xl md:text-[80px] mb-8 mt-12">Rehearsal Dinner Information</h1>
+            <Card className="max-w-2xl mx-auto bg-[#fff5eb] md:bg-transparent border-2 border-black">
               <CardContent className="p-6">
                 <p className="text-center text-lg">
                   As a close family member or member of the wedding party, you are invited to the rehearsal dinner on Saturday, August 23rd at 5:30pm.

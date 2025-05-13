@@ -13,7 +13,7 @@ export default function ProgramPage() {
           <div className="border-[3px] border-black rounded-[2rem] relative h-full w-full">
             <div className="h-full flex items-center justify-center">
               <CenterFlower />
-              <div className="bg-[#fff5eb] rounded-[2rem] md:w-[48rem] w-[25rem] max-w-full py-16 px-6 md:px-12 relative">
+              <div className="md:bg-[#fff5eb] rounded-[2rem] md:w-[48rem] w-[25rem] max-w-full py-16 px-6 md:px-12 relative">
 
                 {/* Date */}
                 <div className="text-center mb-4 p-4">
